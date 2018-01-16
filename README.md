@@ -1,1 +1,1 @@
-# everdayrepo
+Project was created for learning purpose
