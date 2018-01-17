@@ -8,8 +8,20 @@ do_start(){
     echo "ok"
     echo "The answer is 42. Please, come back again after 1 billion years."
 
-case $1 in
-        *)
-                echo Uknown Action: $1
+do_terminate() {
+    echo -n "Safely terminating collider..."
+    sleep 1s
+    echo "oops :("
+       
+}
+
+ñase $1 in
+        start)
+              do_start
         ;;
-esac
+        terminate)
+              do_terminate
+        ;;
+        *)
+              echo Uknown Action: $1
+        ;;
